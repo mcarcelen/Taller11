@@ -8,9 +8,7 @@
     <meta name="generator" content="Hugo 0.84.0">
     <title>Album example · Bootstrap v5.0</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
-
-    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">    
 
     <!-- Bootstrap core CSS -->
     <style>
@@ -62,9 +60,11 @@
       </div>
     </div>
 
-    <ul class="list-group">
-      <app-tabla></app-tabla>
-    </ul>
+      <nav>
+        <a routerLink="/tabla">Tablas</a>
+        <a routerLink="/contacto">Contacto</a>
+      </nav>
+            <router-outlet></router-outlet>
   </section>
 
   <div class="album py-5 bg-body-tertiary">
