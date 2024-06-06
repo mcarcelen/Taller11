@@ -33,17 +33,30 @@
     
 <header>
 
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container">
+      
       <a href="#" class="navbar-brand d-flex align-items-center">
+
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
         <strong>Album</strong>
       </a>
+
+      <ul class="nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" aria-current="page">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/tabla" aria-current="page">Tablas</a>
+        </li>
+      </ul>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-  </div>
+  </nav>
+
 </header>
 
 <main>
@@ -59,14 +72,8 @@
         </p>
       </div>
     </div>
-
-    <div class="col-lg-6 col-md-8 mx-auto">
-      <nav>
-        <a routerLink="/home">Menu</a>
-        <a routerLink="/tabla">Tablas</a>
-      </nav>
-            <router-outlet></router-outlet>
-    </div>
+  
+    <router-outlet></router-outlet>
       
   </section>
 
