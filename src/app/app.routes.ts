@@ -4,5 +4,5 @@ import { ContactoComponent } from './shared/contacto/contacto.component';
 
 export const routes: Routes = [
     {path:'tabla', component: TablaComponent},
-    {path: 'contacto', component: ContactoComponent}
+    {path: 'home', component: ContactoComponent}
 ];
